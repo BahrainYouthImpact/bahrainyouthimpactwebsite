@@ -87,15 +87,15 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-4 md:grid-cols-2">
               <div className="flex flex-col items-center space-y-2 text-center">
-                <div className="text-4xl font-bold text-white">500+</div>
+                <div className="text-4xl font-bold text-white">100+</div>
                 <div className="text-red-100">Students Reached</div>
               </div>
               <div className="flex flex-col items-center space-y-2 text-center">
-                <div className="text-4xl font-bold text-white">25+</div>
+                <div className="text-4xl font-bold text-white">5+</div>
                 <div className="text-red-100">Programs Launched</div>
               </div>
               <div className="flex flex-col items-center space-y-2 text-center">
-                <div className="text-4xl font-bold text-white">15+</div>
+                <div className="text-4xl font-bold text-white">5+</div>
                 <div className="text-red-100">Partner Schools</div>
               </div>
               <div className="flex flex-col items-center space-y-2 text-center">
