@@ -63,7 +63,7 @@ export default function AboutPage() {
                 </h2>
                 <p className="text-gray-600 md:text-lg">
                   What started as a group of passionate high school students discussing how to make a difference in our
-                  community has grown into Bahrain's leading youth empowerment organization.
+                  community has grown into one of Bahrain's leading youth empowerment movement.
                 </p>
                 <p className="text-gray-600 md:text-lg">
                   We recognized that young people in Bahrain had incredible potential but often lacked the platforms and
