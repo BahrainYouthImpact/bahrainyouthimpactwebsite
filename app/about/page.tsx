@@ -1,230 +1,182 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Heart, Target, Award, ArrowLeft } from "lucide-react"
-import Image from "next/image"
+import { ShieldCheck, HeartHandshake, Lightbulb, Globe, Footprints, Users, SignalHigh } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center space-x-2">
-            <Image src="/byi-logo.png" alt="Bahrain Youth Impact Logo" width={32} height={32} className="h-8 w-8" />
-            <span className="font-bold text-xl text-red-700">Bahrain Youth Impact</span>
-          </Link>
-          <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-            <Link href="/" className="text-gray-600 hover:text-red-700 transition-colors">
-              Home
-            </Link>
-            <Link href="/about" className="text-red-700 hover:text-red-800 transition-colors">
-              About Us
-            </Link>
-            <Link href="/programs" className="text-gray-600 hover:text-red-700 transition-colors">
-              Programs
-            </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-red-700 transition-colors">
-              Contact
-            </Link>
-          </nav>
-          <Button className="bg-red-600 hover:bg-red-700 text-white">Get Involved</Button>
+    <div className="flex flex-col w-full bg-white">
+      {/* I. The Manifesto (Hero Section) */}
+      <section className="w-full py-24 md:py-32 lg:py-48 bg-white border-b">
+        <div className="container px-4 md:px-6 flex flex-col items-center text-center space-y-8 max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-[#CE1126] uppercase leading-tight">
+            LEAD THE CHANGE.<br />BE THE IMPACT.
+          </h1>
+          <p className="text-xl md:text-3xl text-zinc-900 font-bold tracking-tight">
+            "The Youth is capable of creating a great change."
+          </p>
+          <p className="max-w-[800px] text-lg md:text-2xl text-zinc-600 leading-relaxed">
+            Bahrain Youth Impact (BYI) is a student-led organization born from the belief that age is not a barrier to leadership. We are a collective of thinkers, doers, and change-makers who believe that the best way to serve Bahrain is to empower its youngest citizens today.
+          </p>
         </div>
-      </header>
+      </section>
 
-      <main className="flex-1">
-        {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-red-50 to-white">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <Link href="/" className="inline-flex items-center text-sm text-red-600 hover:text-red-700 mb-4">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-gray-900">
-                  About <span className="text-red-600">Our Story</span>
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
-                  Born from the passion of high school students who believe in the power of youth to create change.
+      {/* II. The Mission: Bridging the Gap */}
+      <section className="w-full py-24 bg-zinc-50 border-b">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+            <div className="flex-1 space-y-6">
+              <div className="inline-flex items-center justify-center p-3 bg-[#CE1126]/10 rounded-full mb-4">
+                <Footprints className="h-8 w-8 text-[#CE1126]" />
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-zinc-900">
+                Bridging the Gap
+              </h2>
+              <div className="space-y-4 text-lg text-zinc-600 leading-relaxed">
+                <p>
+                  Our mission is to bridge the gap between potential and reality. We exist to provide Bahrain's youth with the space, the tools, and the community needed to turn their ideas into social impact.
+                </p>
+                <p>
+                  We don't just host events; we build the platform where ambition meets action. By moving from passive observation to active leadership, we ensure that the next generation is not just ready for the future, but is actively shaping it.
                 </p>
               </div>
+            </div>
+            <div className="flex-1 w-full bg-white p-8 md:p-12 border shadow-lg rounded-2xl flex flex-col justify-center items-center text-center">
+              <h3 className="text-2xl font-bold text-[#CE1126] mb-4">The Shift</h3>
+              <p className="text-2xl md:text-3xl text-zinc-800 font-medium italic">
+                "From passive observation to active leadership."
+              </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Our Story */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-900">
-                  Our Journey Began in High School
-                </h2>
-                <p className="text-gray-600 md:text-lg">
-                  What started as a group of passionate high school students discussing how to make a difference in our
-                  community has grown into one of Bahrain's leading youth empowerment movement.
-                </p>
-                <p className="text-gray-600 md:text-lg">
-                  We recognized that young people in Bahrain had incredible potential but often lacked the platforms and
-                  opportunities to develop their skills and make their voices heard. So we decided to create those
-                  opportunities ourselves.
-                </p>
-                <p className="text-gray-600 md:text-lg">
-                  Today, we're proud to be 100% student-led, proving that age is just a number when it comes to creating
-                  meaningful change in our society.
-                </p>
-              </div>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=400&width=400"
-                  width="400"
-                  height="400"
-                  alt="Our founding team planning"
-                  className="aspect-square overflow-hidden rounded-xl object-cover"
-                />
-              </div>
-            </div>
+      {/* III. The Pillars of Sovereignty (Core Values) */}
+      <section className="w-full py-24 bg-white border-b">
+        <div className="container px-4 md:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-[#CE1126]">
+              The Pillars of Sovereignty
+            </h2>
+            <p className="text-lg text-zinc-600 mt-4 font-medium">The principles that guide every decision we make.</p>
           </div>
-        </section>
-
-        {/* Our Values */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">Our Values</h2>
-                <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  These core values guide everything we do and shape how we approach youth empowerment.
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="border-none shadow-md bg-zinc-50 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center mb-4 shadow-sm border border-zinc-100">
+                  <ShieldCheck className="h-6 w-6 text-[#CE1126]" />
+                </div>
+                <CardTitle className="text-2xl text-zinc-900">Youth-First Sovereignty</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-zinc-600 leading-relaxed text-lg">
+                  We believe youth should lead youth. Our initiatives are designed by the demographic they serve to ensure they are genuine and effective.
                 </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <Card className="bg-white border-red-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
-                    <Users className="h-6 w-6 text-red-600" />
-                  </div>
-                  <CardTitle className="text-red-700">Student-Led Leadership</CardTitle>
-                  <CardDescription>
-                    We believe young people are capable of leading meaningful change. Every program, initiative, and
-                    decision is driven by students, for students.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="bg-white border-red-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
-                    <Heart className="h-6 w-6 text-red-600" />
-                  </div>
-                  <CardTitle className="text-red-700">Community First</CardTitle>
-                  <CardDescription>
-                    Our commitment to Bahrain and its people drives everything we do. We're here to serve our community
-                    and create lasting positive impact.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="bg-white border-red-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
-                    <Target className="h-6 w-6 text-red-600" />
-                  </div>
-                  <CardTitle className="text-red-700">Excellence & Innovation</CardTitle>
-                  <CardDescription>
-                    We strive for excellence in everything we do while embracing innovative approaches to solve
-                    challenges facing today's youth.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="bg-white border-red-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
-                    <Award className="h-6 w-6 text-red-600" />
-                  </div>
-                  <CardTitle className="text-red-700">Inclusive Growth</CardTitle>
-                  <CardDescription>
-                    We believe every young person deserves the opportunity to grow and succeed, regardless of their
-                    background or circumstances.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-md bg-zinc-50 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center mb-4 shadow-sm border border-zinc-100">
+                  <HeartHandshake className="h-6 w-6 text-[#CE1126]" />
+                </div>
+                <CardTitle className="text-2xl text-zinc-900">Integrity in Action</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-zinc-600 leading-relaxed text-lg">
+                  We value results over rhetoric. Our impact is measured by the change we create, not just the words we speak.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-md bg-zinc-50 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center mb-4 shadow-sm border border-zinc-100">
+                  <Lightbulb className="h-6 w-6 text-[#CE1126]" />
+                </div>
+                <CardTitle className="text-2xl text-zinc-900">Inclusive Excellence</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-zinc-600 leading-relaxed text-lg">
+                  We welcome every student, regardless of their background or field of study, believing that diversity of thought is what sparks true innovation.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-md bg-zinc-50 hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center mb-4 shadow-sm border border-zinc-100">
+                  <Globe className="h-6 w-6 text-[#CE1126]" />
+                </div>
+                <CardTitle className="text-2xl text-zinc-900">Civic Duty</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-zinc-600 leading-relaxed text-lg">
+                  Our work is a tribute to our Kingdom. We align our efforts with Bahrain's national vision to ensure a sustainable and prosperous legacy for all.
+                </p>
+              </CardContent>
+            </Card>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Team Section Placeholder */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">Meet Our Team</h2>
-                <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  The passionate high school students leading Bahrain's youth empowerment movement.
-                </p>
-              </div>
+      {/* IV. National Vision Section & The Institutional Scale */}
+      <section className="w-full py-24 bg-zinc-900 text-white">
+        <div className="container px-4 md:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto items-center">
+            
+            <div className="space-y-8">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
+                National Vision
+              </h2>
+              <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed">
+                Mapping every project against <strong className="text-white">Bahrain's Economic Vision 2030</strong> and the <strong className="text-white">UN Sustainable Development Goals (SDGs)</strong>.
+              </p>
+              <p className="text-lg md:text-xl text-zinc-400 leading-relaxed">
+                Our scale and presence demonstrate a living, breathing movement with deep roots in the community.
+              </p>
             </div>
-            <div className="mx-auto max-w-3xl py-12">
-              <Card className="bg-red-50 border-red-200">
-                <CardHeader className="text-center">
-                  <CardTitle className="text-red-700">Team Details Coming Soon</CardTitle>
-                  <CardDescription>
-                    We're preparing detailed profiles of our amazing team members. Check back soon to learn more about
-                    the students making this all possible!
-                  </CardDescription>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <Card className="bg-zinc-800 border-zinc-700 text-center py-8 hover:bg-zinc-800/80 transition-colors">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto h-16 w-16 rounded-full bg-[#CE1126]/20 flex items-center justify-center mb-4">
+                    <Users className="h-8 w-8 text-[#CE1126]" />
+                  </div>
+                  <CardTitle className="text-5xl md:text-6xl font-black text-white tracking-tighter">50+</CardTitle>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <Button className="bg-red-600 hover:bg-red-700 text-white">Contact Us for More Info</Button>
+                <CardContent>
+                  <p className="text-[#CE1126] font-bold uppercase tracking-widest text-sm mb-2">Solid Foundation</p>
+                  <p className="text-zinc-400 text-sm md:text-base">Dedicated core members</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-zinc-800 border-zinc-700 text-center py-8 hover:bg-zinc-800/80 transition-colors">
+                <CardHeader className="pb-2">
+                  <div className="mx-auto h-16 w-16 rounded-full bg-[#CE1126]/20 flex items-center justify-center mb-4">
+                    <SignalHigh className="h-8 w-8 text-[#CE1126]" />
+                  </div>
+                  <CardTitle className="text-5xl md:text-6xl font-black text-white tracking-tighter">75k+</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-[#CE1126] font-bold uppercase tracking-widest text-sm mb-2">National Voice</p>
+                  <p className="text-zinc-400 text-sm md:text-base">Verified community reach</p>
                 </CardContent>
               </Card>
             </div>
-          </div>
-        </section>
 
-        {/* Call to Action */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-red-600 to-red-700">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">Join Our Mission</h2>
-                <p className="max-w-[600px] text-red-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Be part of the movement that's empowering Bahrain's next generation of leaders.
-                </p>
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-                  Get Involved Today
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-white text-white hover:bg-white hover:text-red-600 bg-transparent"
-                >
-                  Learn About Programs
-                </Button>
-              </div>
-            </div>
           </div>
-        </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
-        <div className="flex items-center space-x-2">
-          <Image src="/byi-logo.png" alt="Bahrain Youth Impact Logo" width={24} height={24} className="h-6 w-6" />
-          <p className="text-xs text-gray-600">© 2025 Bahrain Youth Impact. All rights reserved.</p>
         </div>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="/about" className="text-xs hover:underline underline-offset-4 text-gray-600">
-            About
-          </Link>
-          <Link href="/programs" className="text-xs hover:underline underline-offset-4 text-gray-600">
-            Programs
-          </Link>
-          <Link href="/contact" className="text-xs hover:underline underline-offset-4 text-gray-600">
-            Contact
-          </Link>
-        </nav>
-      </footer>
+      </section>
+
+      {/* Closing */}
+      <section className="w-full py-32 bg-[#CE1126] text-white flex items-center justify-center">
+        <div className="container px-4 md:px-6 max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter uppercase leading-tight">
+            "To our country, we promise a generation of leaders who are ready to serve."
+          </h2>
+        </div>
+      </section>
+
     </div>
   )
 }
