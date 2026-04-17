@@ -18,12 +18,14 @@ export default function ImpactPage() {
         {/* Study 1: Each One, Teach One */}
         <article className="mb-24">
           <div className="relative w-full h-[400px] md:h-[500px] mb-12 bg-zinc-100 rounded-sm overflow-hidden">
-            <Image 
-              src="/each-one-teach-one.png" 
-              alt="Each One, Teach One Initiative" 
-              fill 
-              className="object-cover" 
-            />
+            <a href="/each-one-teach-one.png" target="_blank" rel="noopener noreferrer">
+              <Image 
+                src="/each-one-teach-one.png" 
+                alt="Each One, Teach One Initiative" 
+                fill 
+                className="object-cover cursor-pointer hover:opacity-90 transition-opacity" 
+              />
+            </a>
           </div>
           
           <div className="max-w-3xl mx-auto">
@@ -46,12 +48,14 @@ export default function ImpactPage() {
         {/* Study 2: The BARC Campaign */}
         <article className="mb-24">
           <div className="relative w-full h-[400px] md:h-[500px] mb-12 bg-zinc-100 rounded-sm overflow-hidden">
-            <Image 
-              src="/barc-campaign.png" 
-              alt="BARC Campaign" 
-              fill 
-              className="object-cover" 
-            />
+            <a href="/barc-campaign.png" target="_blank" rel="noopener noreferrer">
+              <Image 
+                src="/barc-campaign.png" 
+                alt="BARC Campaign" 
+                fill 
+                className="object-cover cursor-pointer hover:opacity-90 transition-opacity" 
+              />
+            </a>
           </div>
           
           <div className="max-w-3xl mx-auto">
