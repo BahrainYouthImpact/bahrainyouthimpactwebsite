@@ -11,7 +11,24 @@ export const metadata: Metadata = {
   title: "Bahrain Youth Empowerment | Student-Led Organization",
   description:
     "Empowering Bahrain's next generation through student-led programs, leadership development, and community impact initiatives.",
-    generator: 'v0.dev'
+    generator: 'v0.dev',
+    icons: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        url: '/favicon-32x32.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        url: '/favicon-16x16.png'
+      },
+      {
+        rel: 'apple-touch-icon',
+        type: 'image/png',
+        url: '/apple-touch-icon.png'
+      }
+    ]
 }
 
 export default function RootLayout({

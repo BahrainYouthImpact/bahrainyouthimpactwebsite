@@ -42,11 +42,11 @@ export function Navbar() {
             </Link>
           </nav>
           <div className="flex items-center space-x-3">
-            <Button variant="outline" asChild className="border-[#CE1126] text-[#CE1126] hover:bg-[#CE1126] hover:text-white">
-              <Link href="https://press.bahrainyouthimpact.com" target="_blank" rel="noreferrer">
-                Press
-              </Link>
-            </Button>
+           <Button variant="outline" asChild className="border-[#CE1126] text-[#CE1126] hover:bg-[#CE1126] hover:text-white">
+             <Link href="https://thebahrainyouth.com/" target="_blank" rel="noreferrer">
+               Press
+             </Link>
+           </Button>
             <Button asChild className="bg-[#CE1126] text-white hover:bg-[#CE1126]/90">
               <Link href="https://podcast.bahrainyouthimpact.com" target="_blank" rel="noreferrer">
                 Podcast
@@ -84,11 +84,11 @@ export function Navbar() {
                   </Link>
                 </nav>
                 <div className="flex flex-col space-y-4 pt-8 mt-8 border-t border-zinc-200">
-                  <Button variant="outline" asChild className="w-full border-[#CE1126] text-[#CE1126] hover:bg-[#CE1126] hover:text-white justify-center h-12 text-md">
-                    <Link href="https://press.bahrainyouthimpact.com" target="_blank" rel="noreferrer">
-                      Press
-                    </Link>
-                  </Button>
+                   <Button variant="outline" asChild className="w-full border-[#CE1126] text-[#CE1126] hover:bg-[#CE1126] hover:text-white justify-center h-12 text-md">
+                     <Link href="https://thebahrainyouth.com/" target="_blank" rel="noreferrer">
+                       Press
+                     </Link>
+                   </Button>
                   <Button asChild className="w-full bg-[#CE1126] text-white hover:bg-[#CE1126]/90 justify-center h-12 text-md">
                     <Link href="https://podcast.bahrainyouthimpact.com" target="_blank" rel="noreferrer">
                       Podcast

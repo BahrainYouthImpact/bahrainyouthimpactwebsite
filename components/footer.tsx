@@ -32,7 +32,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold mb-4 text-[#CE1126]">Media</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="https://press.bahrainyouthimpact.com" target="_blank" rel="noreferrer" className="hover:text-[#CE1126] transition-colors">Press</Link></li>
+              <li><Link href="https://thebahrainyouth.com/" target="_blank" rel="noreferrer" className="hover:text-[#CE1126] transition-colors">Press</Link></li>
               <li><Link href="https://podcast.bahrainyouthimpact.com" target="_blank" rel="noreferrer" className="hover:text-[#CE1126] transition-colors">Podcast</Link></li>
             </ul>
           </div>
